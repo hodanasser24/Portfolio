@@ -1,0 +1,190 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Hoda Nasser | Portfolio</title>
+  <style>
+    /* Reset & base */
+    * { box-sizing: border-box; }
+    body { margin: 0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; line-height: 1.6; color: #222; }
+    a { text-decoration: none; }
+    img { max-width: 100%; display: block; }
+    .container { width: min(1100px, 92%); margin: 0 auto; }
+    /* Header */
+    header { background: #f4efe8; border-bottom: 1px solid #e6dfd5; }
+    .nav { display: flex; align-items: center; justify-content: space-between; padding: 16px 0; }
+    .brand { font-weight: 800; letter-spacing: .5px; }
+    .brand span { color: #8b5e34; }
+    .nav a { margin-left: 18px; color: #333; }
+    /* Hero */
+    .hero { display: grid; grid-template-columns: 1.2fr 1fr; gap: 28px; padding: 56px 0; align-items: center; }
+    .hero h1 { font-size: clamp(28px, 4vw, 48px); margin: 0 0 10px; }
+    .hero p { font-size: clamp(14px, 2.3vw, 18px); margin: 10px 0 22px; }
+    .btn { display: inline-block; padding: 12px 18px; border: 1px solid #8b5e34; color: #8b5e34; border-radius: 10px; transition: .2s; }
+    .btn:hover { background: #8b5e34; color: #fff; }
+    .cta { display: flex; gap: 12px; flex-wrap: wrap; }
+    .card { background: #fff; border: 1px solid #eee1d2; border-radius: 14px; padding: 22px; }
+    h2.section-title { font-size: clamp(22px, 3vw, 32px); margin: 0 0 14px; }
+    /* Grid */
+    .grid { display: grid; gap: 16px; }
+    .grid-2 { grid-template-columns: repeat(2, minmax(0,1fr)); }
+    .grid-3 { grid-template-columns: repeat(3, minmax(0,1fr)); }
+    @media (max-width: 900px){ .hero { grid-template-columns: 1fr; } .grid-2, .grid-3 { grid-template-columns: 1fr; } }
+    /* Lists & badges */
+    .tags { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 10px; }
+    .tag { border: 1px solid #d7bfa6; padding: 6px 10px; border-radius: 999px; font-size: 13px; }
+    /* Footer */
+    footer { background: #f4efe8; margin-top: 40px; border-top: 1px solid #e6dfd5; }
+    .muted { color: #6b6b6b; font-size: 14px; }
+    /* Project cards */
+    .project { border: 1px solid #eee1d2; border-radius: 12px; overflow: hidden; background: #fff; }
+    .project-body { padding: 16px; }
+    .project h3 { margin: 0 0 8px; font-size: 18px; }
+    .project p { margin: 0 0 10px; font-size: 14px; color: #333; }
+    .project a { font-size: 14px; }
+    /* Contact */
+    .contact { display: grid; gap: 14px; grid-template-columns: repeat(2, minmax(0,1fr)); }
+    .contact a { color: #8b5e34; word-break: break-word; }
+    @media (max-width: 700px){ .contact { grid-template-columns: 1fr; } }
+    /* Video thumbnail */
+    .thumb { background: #e9dccf; border: 1px dashed #c7a27b; border-radius: 12px; display:flex; align-items:center; justify-content:center; height: 200px; color:#8b5e34; font-weight:600;}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <div class="brand">Hoda <span>Nasser</span></div>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- Hero -->
+    <section class="hero">
+      <div>
+        <h1>Full‑Stack Web Developer</h1>
+        <p>Passionate about building scalable, user‑friendly web apps using Laravel, MySQL, and modern frontend technologies. I translate complex requirements into clean, maintainable code.</p>
+        <div class="cta">
+          <a class="btn" href="https://drive.google.com/file/d/17ouF6wr-hpZcrUWTnN0KkiXbvFWlpgSQ/view?usp=share_link" target="_blank" rel="noopener">Download My CV</a>
+          <a class="btn" href="#projects">See Projects</a>
+        </div>
+      </div>
+      <div class="card">
+        <strong>About me</strong>
+        <p>Hi, I’m Hoda — I help businesses and individuals bring their ideas to life through clean, reliable code. From responsive sites to full‑stack apps, I tailor each project to your needs and deadlines.</p>
+      </div>
+    </section>
+
+    <!-- Education -->
+    <section id="education" class="card">
+      <h2 class="section-title">Education</h2>
+      <p><strong>B.Sc. in Computer Science & AI – Software Engineering</strong><br/>Helwan University (2023–2027) — Cumulative Grade: Very Good</p>
+      <div class="tags">
+        <span class="tag">OOP (Java)</span>
+        <span class="tag">Data Structures & Algorithms (C++)</span>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="card">
+      <h2 class="section-title">Skills</h2>
+      <div class="grid grid-3">
+        <div>
+          <strong>Programming</strong>
+          <div class="tags">
+            <span class="tag">Python</span><span class="tag">C</span><span class="tag">C++</span><span class="tag">Java</span>
+          </div>
+        </div>
+        <div>
+          <strong>Web</strong>
+          <div class="tags">
+            <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span><span class="tag">Bootstrap</span><span class="tag">Laravel</span>
+          </div>
+        </div>
+        <div>
+          <strong>Tools</strong>
+          <div class="tags">
+            <span class="tag">Git</span><span class="tag">GitHub</span><span class="tag">MySQL</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section id="experience" class="card">
+      <h2 class="section-title">Experience & Training</h2>
+      <ul>
+        <li><strong>Full Stack Web Development – NTI & ITIDA</strong> (Jul–Aug 2025): Built and deployed small full‑stack apps with HTML, CSS, JS, PHP, Laravel, MySQL. Used Git/GitHub for collaboration.</li>
+        <li><strong>Web Development Fundamentals – Sprints</strong> (Jun–Aug 2025): SDLC, design principles, API integration, Git workflows.</li>
+        <li><strong>AI Career Essentials – ALX</strong> (Mar–May 2025): AI applications & ethics.</li>
+        <li><strong>Marketing Strategies & Social Media Tools</strong> (Feb–Mar 2024): Audience targeting & analytics.</li>
+      </ul>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="card">
+      <h2 class="section-title">Projects</h2>
+      <div class="grid grid-2">
+        <div class="project">
+          <div class="thumb">Courses Management System (Laravel)</div>
+          <div class="project-body">
+            <h3>Courses Management System</h3>
+            <p>Auth, roles, course CRUD, student enrollment, progress tracking, search.</p>
+            <a href="https://drive.google.com/file/d/1e2f1HZdsQurwAC5ZyWCqtB1ys5DWu6qE/view?usp=sharing" target="_blank" rel="noopener">Preview video</a>
+          </div>
+        </div>
+        <div class="project">
+          <div class="thumb">Hangman Game (HTML/CSS/JS)</div>
+          <div class="project-body">
+            <h3>Hangman Game</h3>
+            <p>Interactive browser game with score tracking and dynamic word generation.</p>
+          </div>
+        </div>
+        <div class="project">
+          <div class="thumb">CPU Scheduling (Linux GUI)</div>
+          <div class="project-body">
+            <h3>CPU Scheduling – Round Robin</h3>
+            <p>GUI to calculate WT, TAT, RT using Round Robin algorithm.</p>
+          </div>
+        </div>
+        <div class="project">
+          <div class="thumb">Educational Center UML</div>
+          <div class="project-body">
+            <h3>Educational Center Management System (UML)</h3>
+            <p>Requirements, diagrams, and architecture for a private center.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="card">
+      <h2 class="section-title">Contact</h2>
+      <div class="contact">
+        <div>
+          <p><strong>Email:</strong> <a href="mailto:hoda.nasser2006@gmail.com">hoda.nasser2006@gmail.com</a></p>
+          <p><strong>Phone:</strong> <a href="tel:+201033777336">+20 103 377 7336</a></p>
+        </div>
+        <div>
+          <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/hoda-nasser" target="_blank" rel="noopener">linkedin.com/in/hoda-nasser</a></p>
+          <p><strong>GitHub:</strong> <a href="https://github.com/hodanasser24" target="_blank" rel="noopener">github.com/hodanasser24</a></p>
+          <p><strong>Location:</strong> Cairo, Egypt</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container" style="padding:16px 0;">
+      <p class="muted">© Hoda Nasser — Thanks for viewing my portfolio.</p>
+    </div>
+  </footer>
+</body>
+</html>
